@@ -2,8 +2,8 @@
   <name>mdease</name>
   <theme>0</theme>
   <swatch>c</swatch>
-  <start-screen>5F9AFE68-6E01-544B-4ECD-1F0043620C6D</start-screen>
-  <start-screen-asset-id>1427892</start-screen-asset-id>
+  <start-screen>419B4ECA-EAD9-8256-D0C9-1F8CDB10EABD</start-screen>
+  <start-screen-asset-id>1428138</start-screen-asset-id>
   <description>mdease connects people with aliments directly with dotors without entiering their office.</description>
   <screen-resolution>
     <custom>false</custom>
