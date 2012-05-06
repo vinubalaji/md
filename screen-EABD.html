@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <script type="text/javascript" src="files/resources/lib/detectmobilebrowser.js">
+        </script>
+        <script type="text/javascript">
+         var screen_mobile = true;
+ var screen_width = 320;
+ var screen_height = 480;
+ var browser_mobile = is_mobile_browser();
+
+ if (screen_mobile && !browser_mobile && top == window)
+ {
+     top.location.href = './mob-screen-EABD.html';
+ }
+        </script>
+        <title>
+            choosedoc2
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="initial-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta names="apple-mobile-web-app-status-bar-style" content="black-translucent"
+        />
+        <link href="files/resources/lib/jquerymobile/1.0.1/jquery.mobile-1.0.1.min.css"
+        rel="stylesheet" />
+        <link type="text/css" href="files/views/assets/asset-1427887.css" rel="stylesheet"
+        />
+        <script type="text/javascript" src="files/resources/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-1.6.4.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/jquery.mobile.iepatch.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/1.0.1/jquery.mobile-1.0.1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jsonpath.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/api.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/impl.js">
+        </script>
+        <link href="files/resources/css/mobilebase.css" rel="stylesheet" type="text/css"
+        />
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                if (navigator.userAgent.match(/iP/i))
+        {
+            $(window).bind('orientationchange', function(event)
+            {
+                $('meta[name="viewport"]').attr('content', 'initial-scale=1.0,maximum-scale=1.0, ' + ((window.orientation == 90 || window.orientation == -90 || window.orientation == 270) ? "height=device-width,width=device-height" : "height=device-height,width=device-width"));
+            }).trigger('orientationchange');
+        }
+        </script>
+        <div data-role="page" style="min-height:480px;" id="j_65" class="type-interior"
+        data-theme='c'>
+            <div data-role="header" data-position="fixed" data-theme='c' name="mobileheader5"
+            id="j_67" class='mobileheader7'>
+                <h1 dsid="mobileheader5">
+                    Choose a Doctor
+                </h1>
+            </div>
+            <div data-role="content" id="j_68" name="mobilecontainer5" class="mobilecontainer7"
+            dsid="mobilecontainer5" data-theme='c'>
+                <link href="screen-EABD.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="screen-EABD.js">
+                </script>
+            </div>
+            <div data-role="footer" class="mobilefooter7" data-position="fixed" id="j_69" data-theme='c'>
+            </div>
+        </div>
+    </body>
+
+</html>

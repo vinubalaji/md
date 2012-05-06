@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <script type="text/javascript" src="files/resources/lib/detectmobilebrowser.js">
+        </script>
+        <script type="text/javascript">
+         var screen_mobile = true;
+ var screen_width = 320;
+ var screen_height = 480;
+ var browser_mobile = is_mobile_browser();
+
+ if (screen_mobile && !browser_mobile && top == window)
+ {
+     top.location.href = './mob-screen-EC2C.html';
+ }
+        </script>
+        <title>
+            screen4
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="initial-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta names="apple-mobile-web-app-status-bar-style" content="black-translucent"
+        />
+        <link href="files/resources/lib/jquerymobile/1.0.1/jquery.mobile-1.0.1.min.css"
+        rel="stylesheet" />
+        <link type="text/css" href="files/views/assets/asset-1427887.css" rel="stylesheet"
+        />
+        <script type="text/javascript" src="files/resources/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-1.6.4.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/jquery.mobile.iepatch.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/1.0.1/jquery.mobile-1.0.1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jsonpath.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/api.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/impl.js">
+        </script>
+        <link href="files/resources/css/mobilebase.css" rel="stylesheet" type="text/css"
+        />
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                if (navigator.userAgent.match(/iP/i))
+        {
+            $(window).bind('orientationchange', function(event)
+            {
+                $('meta[name="viewport"]').attr('content', 'initial-scale=1.0,maximum-scale=1.0, ' + ((window.orientation == 90 || window.orientation == -90 || window.orientation == 270) ? "height=device-width,width=device-height" : "height=device-height,width=device-width"));
+            }).trigger('orientationchange');
+        }
+        </script>
+        <div data-role="page" style="min-height:480px;" id="j_9" class="type-interior" data-theme='c'>
+            <div data-role="header" data-position="fixed" data-theme='c' name="mobileheader6"
+            id="j_11" class='mobileheader2'>
+                <h1 dsid="mobileheader6">
+                    Incoming Patient Visit
+                </h1>
+            </div>
+            <div data-role="content" id="j_12" name="mobilecontainer6" class="mobilecontainer2"
+            dsid="mobilecontainer6" data-theme='c'>
+                <link href="screen-EC2C.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="screen-EC2C.js">
+                </script>
+                <div name="mobilelabel12" id="j_13" dsid="mobilelabel12" data-role="tiggr_label"
+                class='mobilelabel1'>
+                    SMS Alert
+                </div>
+                <div class="mobileimage2_div">
+                    <img class="mobileimage2" src="files/views/assets/asset-1428128" id="j_14" dsid="mobileimage4"
+                    name="mobileimage4" />
+                </div>
+                <div name="mobilelabel7" id="j_15" dsid="mobilelabel7" data-role="tiggr_label" class='mobilelabel2'>
+                    Name: Ryan Miller
+                </div>
+                <div name="mobilelabel13" id="j_16" dsid="mobilelabel13" data-role="tiggr_label"
+                class='mobilelabel3'>
+                    Height: 5'11
+                </div>
+                <div name="mobilelabel10" id="j_17" dsid="mobilelabel10" data-role="tiggr_label"
+                class='mobilelabel4'>
+                    Weight: 182lbs
+                </div>
+                <div data-role="fieldcontain" class="mobiletextarea2">
+                    <textarea name="mobiletextarea4" id="j_18" tabIndex="1" dsid="mobiletextarea4" data-theme='c'
+                    class='mobiletextarea2'>Very sluggish, sniffing nose.  :(</textarea>
+                </div>
+                <div class="mobilebutton2_wrapper ">
+                    <a data-role="button" name="mobilebutton3" dsid="mobilebutton3" class=' mobilebutton2'
+                    id='j_19' data-inline='false' data-theme='c' tabIndex="2">Accept Visit</a>
+                </div>
+            </div>
+            <div data-role="footer" class="mobilefooter2" data-position="fixed" id="j_20" data-theme='c'>
+            </div>
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <script type="text/javascript" src="files/resources/lib/detectmobilebrowser.js">
+        </script>
+        <script type="text/javascript">
+         var screen_mobile = true;
+ var screen_width = 320;
+ var screen_height = 480;
+ var browser_mobile = is_mobile_browser();
+
+ if (screen_mobile && !browser_mobile && top == window)
+ {
+     top.location.href = './mob-screen-F43B.html';
+ }
+        </script>
+        <title>
+            screen5
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="initial-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta names="apple-mobile-web-app-status-bar-style" content="black-translucent"
+        />
+        <link href="files/resources/lib/jquerymobile/1.0.1/jquery.mobile-1.0.1.min.css"
+        rel="stylesheet" />
+        <link type="text/css" href="files/views/assets/asset-1427887.css" rel="stylesheet"
+        />
+        <script type="text/javascript" src="files/resources/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-1.6.4.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/jquery.mobile.iepatch.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/1.0.1/jquery.mobile-1.0.1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jsonpath.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/api.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/impl.js">
+        </script>
+        <link href="files/resources/css/mobilebase.css" rel="stylesheet" type="text/css"
+        />
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                if (navigator.userAgent.match(/iP/i))
+        {
+            $(window).bind('orientationchange', function(event)
+            {
+                $('meta[name="viewport"]').attr('content', 'initial-scale=1.0,maximum-scale=1.0, ' + ((window.orientation == 90 || window.orientation == -90 || window.orientation == 270) ? "height=device-width,width=device-height" : "height=device-height,width=device-width"));
+            }).trigger('orientationchange');
+        }
+        </script>
+        <div data-role="page" style="min-height:480px;" id="j_36" class="type-interior"
+        data-theme='c'>
+            <div data-role="header" data-position="fixed" data-theme='c' name="mobileheader7"
+            id="j_38" class='mobileheader4'>
+                <h1 dsid="mobileheader7">
+                    Write Perscription
+                </h1>
+            </div>
+            <div data-role="content" id="j_39" name="mobilecontainer7" class="mobilecontainer4"
+            dsid="mobilecontainer7" data-theme='c'>
+                <link href="screen-F43B.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="screen-F43B.js">
+                </script>
+                <div name="mobilelabel15" id="j_40" dsid="mobilelabel15" data-role="tiggr_label"
+                class='mobilelabel8'>
+                    Drug Name:
+                </div>
+                <div name="mobilelabel16" id="j_41" dsid="mobilelabel16" data-role="tiggr_label"
+                class='mobilelabel9'>
+                    Form:
+                </div>
+                <div name="mobilelabel17" id="j_42" dsid="mobilelabel17" data-role="tiggr_label"
+                class='mobilelabel10'>
+                    Strength:
+                </div>
+                <div name="mobilelabel18" id="j_43" dsid="mobilelabel18" data-role="tiggr_label"
+                class='mobilelabel11'>
+                    Number:
+                </div>
+                <div name="mobilelabel19" id="j_44" dsid="mobilelabel19" data-role="tiggr_label"
+                class='mobilelabel12'>
+                    Directions:
+                </div>
+                <div name="mobilelabel20" id="j_45" dsid="mobilelabel20" data-role="tiggr_label"
+                class='mobilelabel13'>
+                    Perscription Number:
+                </div>
+                <div class="mobilebutton4_wrapper ">
+                    <a data-role="button" name="mobilebutton4" dsid="mobilebutton4" class=' mobilebutton4'
+                    id='j_46' data-inline='false' data-theme='c' tabIndex="1">Send to Pharmacy</a>
+                </div>
+            </div>
+            <div data-role="footer" class="mobilefooter4" data-position="fixed" id="j_47" data-theme='c'>
+            </div>
+        </div>
+    </body>
+
+</html>

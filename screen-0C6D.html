@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <script type="text/javascript" src="files/resources/lib/detectmobilebrowser.js">
+        </script>
+        <script type="text/javascript">
+         var screen_mobile = true;
+ var screen_width = 320;
+ var screen_height = 480;
+ var browser_mobile = is_mobile_browser();
+
+ if (screen_mobile && !browser_mobile && top == window)
+ {
+     top.location.href = './mob-screen-0C6D.html';
+ }
+        </script>
+        <title>
+            screen1
+        </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="initial-scale=1" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta names="apple-mobile-web-app-status-bar-style" content="black-translucent"
+        />
+        <link href="files/resources/lib/jquerymobile/1.0.1/jquery.mobile-1.0.1.min.css"
+        rel="stylesheet" />
+        <link type="text/css" href="files/views/assets/asset-1427887.css" rel="stylesheet"
+        />
+        <script type="text/javascript" src="files/resources/lib/store/json2.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquery/jquery-1.6.4.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/jquery.mobile.iepatch.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/jquerymobile/1.0.1/jquery.mobile-1.0.1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/mobilebase.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/event/customEventHandler.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/sha1.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/oauth.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/contexts.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jsonpath.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/jquery.xml2json.min.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/api.js">
+        </script>
+        <script type="text/javascript" src="files/resources/lib/base/impl.js">
+        </script>
+        <link href="files/resources/css/mobilebase.css" rel="stylesheet" type="text/css"
+        />
+    </head>
+    
+    <body>
+        <script language="JavaScript" type="text/javascript">
+                if (navigator.userAgent.match(/iP/i))
+        {
+            $(window).bind('orientationchange', function(event)
+            {
+                $('meta[name="viewport"]').attr('content', 'initial-scale=1.0,maximum-scale=1.0, ' + ((window.orientation == 90 || window.orientation == -90 || window.orientation == 270) ? "height=device-width,width=device-height" : "height=device-height,width=device-width"));
+            }).trigger('orientationchange');
+        }
+        </script>
+        <div data-role="page" style="min-height:480px;" id="j_22" class="type-interior"
+        data-theme='c'>
+            <div data-role="header" data-position="fixed" data-theme='c' name="mobileheader3"
+            id="j_24" class='mobileheader3'>
+                <h1 dsid="mobileheader3">
+                    MDEASE
+                </h1>
+            </div>
+            <div data-role="content" id="j_25" name="mobilecontainer3" class="mobilecontainer3"
+            dsid="mobilecontainer3" data-theme='c'>
+                <link href="screen-0C6D.css" rel="stylesheet" type="text/css" />
+                <script type="text/javascript" src="screen-0C6D.js">
+                </script>
+                <div name="mobilepanel4" dsid="mobilepanel4" id="j_26" class="mobilepanel1">
+                    <div class="mobileimage3_div">
+                        <img class="mobileimage3" src="files/views/assets/asset-1427891" id="j_27" dsid="mobileimage3"
+                        name="mobileimage3" />
+                    </div>
+                </div>
+                <div name="mobilelabel12" id="j_28" dsid="mobilelabel12" data-role="tiggr_label"
+                class='mobilelabel5'>
+                    Get well at the comfort of your home.
+                </div>
+                <div name="mobilelabel14" id="j_29" dsid="mobilelabel14" data-role="tiggr_label"
+                class='mobilelabel6'>
+                    Please enter your temperature:
+                </div>
+                <div data-role="fieldcontain" class="mobiletextarea3">
+                    <textarea name="mobiletextarea10" id="j_30" tabIndex="4" dsid="mobiletextarea10"
+                    data-theme='c' class='mobiletextarea3'></textarea>
+                </div>
+                <div name="mobilelabel16" id="j_31" dsid="mobilelabel16" data-role="tiggr_label"
+                class='mobilelabel7'>
+                    Please enter symptoms:
+                </div>
+                <div data-role="fieldcontain" class="mobiletextarea4">
+                    <textarea name="mobiletextarea12" id="j_32" tabIndex="2" dsid="mobiletextarea12"
+                    data-theme='c' class='mobiletextarea4'>&#xD;</textarea>
+                </div>
+                <div class="mobilebutton3_wrapper ">
+                    <a data-role="button" name="mobilebutton4" dsid="mobilebutton4" class=' mobilebutton3'
+                    id='j_33' data-inline='false' data-theme='c' tabIndex="3">Speak with Doctor </a>
+                </div>
+            </div>
+            <div data-role="footer" class="mobilefooter3" data-position="fixed" id="j_34" data-theme='c'>
+            </div>
+        </div>
+    </body>
+
+</html>
