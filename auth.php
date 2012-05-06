@@ -23,13 +23,10 @@ function curl_get( $url, $fields) {
 	$fields_string  = http_build_query($fields, '', '&');
 //	echo "Field string is $fields_string";
 	$url = $url . '?' . $fields_string;
-	echo "Url is $url";
+	//echo "Url is $url";
 	$ch = curl_init();
 	curl_setopt( $ch, CURLOPT_URL, $url);
 	curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-/*	curl_setopt( $ch, CURLOPT_POST,  false);
-	curl_setopt( $ch, CURLOPT_POSTFIELDS, null);
-	curl_setopt( $ch, CURLOPT_HTTPGET, true);*/
 	
 	//curl_setopt ( $ch , CURLOPT_VERBOSE , 1 );
         //curl_setopt ( $ch , CURLOPT_HEADER , 1 );
@@ -60,9 +57,12 @@ $access_token = $response_json->{'access_token'};
 //$symptom_array = array("name" => "symptom", "value" => "test value", "timestamp":"201108291223");
 //json_encode($symptom_array);
 
-$access_fields = array( 'oauth_token' => urlencode($access_token));
-$access_response = curl_get("https://api-mhealth.att.com/v2/health/source/online_doctor/data", $access_fields);
+$access_fields = array( 'oauth_token' => urlencode($access_token), 'accept' => 'json');
+//$access_response = curl_get("https://api-mhealth.att.com/v2/health/source/online_doctor/data", $access_fields);
+$access_response = curl_get("https://api-mhealth.att.com/v2/health/data/mass", $access_fields);
+$access_json = json_decode($access_response);
 
-echo "Access response is $access_response";
+
+echo "$access_response";
 
 ?>
